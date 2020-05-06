@@ -1,0 +1,107 @@
+/* Pequeno reset na página*/
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: deepskyblue;
+    color: #fff;
+    height: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+/* Game style */
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+
+[tp-flappy]{
+    background-color: deepskyblue;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+}
+.passaro {
+    left: calc(50% - 30px);    
+    position: absolute;
+    width: 60px;
+}
+.par-de-barreiras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.barreira {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.barreira .borda {
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border: 2px solid #000;
+    height: 30px;
+    width: 130px;
+}
+
+.barreira .corpo {
+    background: linear-gradient(90deg, #639301, #a5e82e);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    height: 150px;
+    width: 110px;
+}
+
+.progresso {
+    font-family: 'Pixel';
+    font-size: 70px;
+    line-height: 50px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 100;
+}
+
+.box {
+    background:#FFDC73;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    font-family: 'Pixel';
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 100px auto;    
+    position: relative;
+    width: 350px;
+    z-index: 100;
+}
+.box button {
+    background: linear-gradient(180deg, #4488BF, #265999);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
